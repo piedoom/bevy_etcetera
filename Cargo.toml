@@ -1,7 +1,8 @@
 [package]
 name = "bevy_etcetera"
+authors = ["doomy"]
 categories = ["config", "filesystem", "game-development"]
-descripton = "Tiny Bevy wrapper for etcetera: An unopinionated library for obtaining configuration, data, cache, & other directories"
+description = "Tiny Bevy wrapper for etcetera: An unopinionated library for obtaining configuration, data, cache, & other directories"
 documentation = "https://docs.rs/bevy_etcetera"
 homepage = "https://github.com/piedoom/bevy_etcetera"
 keywords = ["bevy", "directory", "path", "files"]
