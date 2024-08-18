@@ -1,5 +1,13 @@
 [package]
 name = "bevy_etcetera"
+categories = ["config", "filesystem", "game-development"]
+descripton = "Tiny Bevy wrapper for etcetera: An unopinionated library for obtaining configuration, data, cache, & other directories"
+documentation = "https://docs.rs/bevy_etcetera"
+homepage = "https://github.com/piedoom/bevy_etcetera"
+keywords = ["bevy", "directory", "path", "files"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/piedoom/bevy_etcetera"
 version = "0.1.0"
 edition = "2021"
 
