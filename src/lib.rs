@@ -73,26 +73,44 @@ impl Directories {
     }
 
     /// Gets the home directory of the current user
+    ///
+    /// * MacOS - `~/`
+    /// * Linux - `~/`
+    /// * Windows - `%USERPROFILE%/`
     pub fn home_dir(&self) -> &Path {
         self.0.home_dir()
     }
 
     /// Gets the configuration directory for your application.
+    ///
+    /// * MacOS - `~/Library/Preferences/`
+    /// * Linux - `~/.config/`
+    /// * Windows - `%APPDATA%`
     pub fn config_dir(&self) -> PathBuf {
         self.0.config_dir()
     }
 
     /// Gets the data directory for your application.
+    ///
+    /// * MacOS - `~/Library/Application Support/`
+    /// * Linux - `~/.local/share/`
+    /// * Windows - `%APPDATA%`
     pub fn data_dir(&self) -> PathBuf {
         self.0.data_dir()
     }
 
     /// Gets the cache directory for your application.
+    ///
+    /// * MacOS - `~/Library/Caches/`
+    /// * Linux - `~/.cache/`
+    /// * Windows - `%LOCALAPPDATA%`
     pub fn cache_dir(&self) -> PathBuf {
         self.0.cache_dir()
     }
 
     /// Gets the state directory for your application. State directory may not to exist for all conventions.
+    ///
+    /// * Linux - `~/.local/state`
     pub fn state_dir(&self) -> Option<PathBuf> {
         self.0.state_dir()
     }
